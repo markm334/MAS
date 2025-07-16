@@ -1,0 +1,13 @@
+{% load static %}
+<form method="post" action="{% url 'newsletter_subscribe' %}" class="newsletter-form">
+    {% csrf_token %}
+    {{ form.email }}
+    <button class="btn btn-primary w-100 py-3 mt-2" type="submit">Submit Now</button>
+</form>
+{% if messages %}
+    <div class="mt-2">
+        {% for message in messages %}
+            <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+        {% endfor %}
+    </div>
+{% endif %}

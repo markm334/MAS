@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container py-5">
+    <h1 class="mb-4">Send Newsletter to All Subscribers</h1>
+    {% if sent %}
+        <div class="alert alert-success">Newsletter sent to {{ subscribers|length }} subscribers.</div>
+    {% endif %}
+    <form method="post" enctype="multipart/form-data" class="mb-4">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Send Newsletter</button>
+    </form>
+    <h5>Recipients:</h5>
+    <ul>
+        {% for email in subscribers %}
+            <li>{{ email }}</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

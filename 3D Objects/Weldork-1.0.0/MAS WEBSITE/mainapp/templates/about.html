@@ -1,0 +1,415 @@
+
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <!-- About Hero Section -->
+    <section class="about-hero-section py-5" style="background: linear-gradient(90deg, #009688 60%, #fff 40%);">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-white">
+                    <h1 class="display-4 fw-bold mb-3">About MAS</h1>
+                    <h3 class="mb-4">Empowering Inclusive Mobility & Sustainable Living</h3>
+                    <p class="lead">The Multifunctional Assistive System (MAS) is a groundbreaking solution designed to enhance the quality of life for individuals with disabilities. Developed with a strong focus on sustainability and user empowerment, MAS combines advanced assistive technologies with eco-friendly materials and smart design.</p>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="{% static 'images/m2.png' %}" class="img-fluid rounded shadow-lg" alt="MAS Device" style="max-height: 350px; background: #fff; padding: 1rem;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & Mission Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <div class="p-4 bg-white rounded shadow-sm h-100">
+                        <h4 class="text-primary mb-3"><i class="fa fa-eye me-2"></i>Our Vision</h4>
+                        <p>To be a leader in inclusive mobility solutions, enabling independence and dignity for all, regardless of physical ability or environment.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-4 bg-white rounded shadow-sm h-100">
+                        <h4 class="text-primary mb-3"><i class="fa fa-bullseye me-2"></i>Our Mission</h4>
+                        <p>To design and deliver intelligent, sustainable assistive systems that empower users, promote environmental responsibility, and foster community inclusion.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center text-uppercase mb-5">Our Journey</h2>
+            <div class="timeline-horizontal position-relative mb-5" style="overflow-x:auto;">
+                <div class="d-flex flex-nowrap align-items-stretch justify-content-center" style="min-width:900px;">
+                    <!-- 2017 -->
+                    <div class="timeline-item text-center flex-shrink-0 px-3" style="width:180px;">
+                        <div class="timeline-icon mx-auto mb-2 bg-primary text-white d-flex align-items-center justify-content-center rounded-circle" style="width:48px; height:48px; font-size:2rem;"><i class="fa fa-heartbeat"></i></div>
+                        <h6 class="fw-bold mt-3">2017</h6>
+                        <p class="small">A Personal Challenge<br><span class="text-muted">Mother's diagnosis and being fully bedridden inspired MAS.</span></p>
+                    </div>
+                    <!-- 2021 -->
+                    <div class="timeline-item text-center flex-shrink-0 px-3" style="width:180px;">
+                        <div class="timeline-icon mx-auto mb-2 bg-info text-white d-flex align-items-center justify-content-center rounded-circle" style="width:48px; height:48px; font-size:2rem;"><i class="fa fa-search"></i></div>
+                        <h6 class="fw-bold mt-3">2021</h6>
+                        <p class="small">Inspiration & Research<br><span class="text-muted">Researching assistive tech and sustainable materials.</span></p>
+                    </div>
+                    <!-- 2022 -->
+                    <div class="timeline-item text-center flex-shrink-0 px-3" style="width:180px;">
+                        <div class="timeline-icon mx-auto mb-2 bg-success text-white d-flex align-items-center justify-content-center rounded-circle" style="width:48px; height:48px; font-size:2rem;"><i class="fa fa-lightbulb"></i></div>
+                        <h6 class="fw-bold mt-3">2022</h6>
+                        <p class="small">Conceptualization<br><span class="text-muted">Identified the need for a modular, eco-friendly device.</span></p>
+                    </div>
+                    <!-- 2023 -->
+                    <div class="timeline-item text-center flex-shrink-0 px-3" style="width:180px;">
+                        <div class="timeline-icon mx-auto mb-2 bg-success text-white d-flex align-items-center justify-content-center rounded-circle" style="width:48px; height:48px; font-size:2rem;"><i class="fa fa-cogs"></i></div>
+                        <h6 class="fw-bold mt-3">2023</h6>
+                        <p class="small">Prototyping<br><span class="text-muted">First MAS prototype with bamboo fiber and bioplastics.</span></p>
+                    </div>
+                    <!-- 2024 -->
+                    <div class="timeline-item text-center flex-shrink-0 px-3" style="width:180px;">
+                        <div class="timeline-icon mx-auto mb-2 bg-secondary text-white d-flex align-items-center justify-content-center rounded-circle" style="width:48px; height:48px; font-size:2rem;"><i class="fa fa-users"></i></div>
+                        <h6 class="fw-bold mt-3">2024</h6>
+                        <p class="small">User Testing<br><span class="text-muted">Collaborated with users and experts to refine MAS.</span></p>
+                    </div>
+                    <!-- 2025 -->
+                    <div class="timeline-item text-center flex-shrink-0 px-3" style="width:180px;">
+                        <div class="timeline-icon mx-auto mb-2 bg-danger text-white d-flex align-items-center justify-content-center rounded-circle" style="width:48px; height:48px; font-size:2rem;"><i class="fa fa-rocket"></i></div>
+                        <h6 class="fw-bold mt-3">2025</h6>
+                        <p class="small">Launch<br><span class="text-muted">MAS is now available, supporting independence and sustainability.</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            .timeline-horizontal {
+                position: relative;
+                padding-bottom: 2rem;
+            }
+            .timeline-horizontal .timeline-line {
+                left: 0;
+                right: 0;
+                top: 24px;
+                height: 4px;
+                background: #009688;
+                z-index: 0;
+            }
+            .timeline-horizontal .timeline-item {
+                position: relative;
+                z-index: 1;
+            }
+            @media (max-width: 991px) {
+                .timeline-horizontal .timeline-item { width: 220px; }
+            }
+        </style>
+    </section>
+
+
+    <!-- Impact & Values Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center text-uppercase mb-5">Our Impact & Values</h2>
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <div class="p-4 bg-white rounded shadow-sm h-100">
+                        <h4 class="text-primary mb-3"><i class="fa fa-globe-africa me-2"></i>Community Impact</h4>
+                        <p>MAS has already improved the lives of many individuals in Sagana and beyond, providing greater independence, mobility, and confidence. Our outreach programs and partnerships with local organizations ensure that assistive technology is accessible to those who need it most.</p>
+                        <ul class="list-unstyled mt-3">
+                            <li><i class="fa fa-check text-success me-2"></i>Increased school attendance for children with mobility challenges</li>
+                            <li><i class="fa fa-check text-success me-2"></i>Enhanced employment opportunities for adults with disabilities</li>
+                            <li><i class="fa fa-check text-success me-2"></i>Active participation in community events and sports</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-4 bg-white rounded shadow-sm h-100">
+                        <h4 class="text-primary mb-3"><i class="fa fa-heart me-2"></i>Our Core Values</h4>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-leaf text-success me-2"></i><b>Sustainability:</b> We prioritize eco-friendly materials and processes in every aspect of MAS.</li>
+                            <li><i class="fa fa-users text-success me-2"></i><b>Inclusion:</b> MAS is designed with and for people with disabilities, ensuring true user empowerment.</li>
+                            <li><i class="fa fa-lightbulb text-success me-2"></i><b>Innovation:</b> We embrace new technologies and creative solutions to meet evolving needs.</li>
+                            <li><i class="fa fa-handshake text-success me-2"></i><b>Collaboration:</b> We work with local communities, experts, and users to maximize impact.</li>
+                        </ul>
+                        <p class="mt-3">Our commitment to these values drives us to continually improve MAS and expand its reach.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Statistics Section -->
+    <section class="py-5" style="background: linear-gradient(90deg, #f8fafc 60%, #e0f7fa 100%);">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <div class="p-4 bg-white rounded shadow-sm h-100">
+                        <i class="fa fa-wheelchair fa-3x text-primary mb-2"></i>
+                        <h2 class="fw-bold mb-1">50+</h2>
+                        <p class="mb-0">Lives Impacted</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <div class="p-4 bg-white rounded shadow-sm h-100">
+                        <i class="fa fa-leaf fa-3x text-success mb-2"></i>
+                        <h2 class="fw-bold mb-1">90%</h2>
+                        <p class="mb-0">Eco Materials</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <div class="p-4 bg-white rounded shadow-sm h-100">
+                        <i class="fa fa-globe-africa fa-3x text-info mb-2"></i>
+                        <h2 class="fw-bold mb-1">12</h2>
+                        <p class="mb-0">Counties Reached</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-4 bg-white rounded shadow-sm h-100">
+                        <i class="fa fa-users fa-3x text-success mb-2"></i>
+                        <h2 class="fw-bold mb-1">30+</h2>
+                        <p class="mb-0">Community Partners</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center text-uppercase mb-5">What People Say</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-8">
+                    <div class="testimonial bg-white rounded shadow-sm p-4 h-100 text-center">
+                        <div class="mb-3">
+                            <i class="fa fa-info-circle fa-2x text-primary"></i>
+                        </div>
+                        <h6 class="mb-2">User Stories Coming Soon</h6>
+                        <p class="mb-0">We look forward to sharing real experiences and testimonials from MAS users after our official launch. Stay tuned for inspiring stories of impact and empowerment!</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial bg-white rounded shadow-sm p-4 h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="{% static 'images/b.jpg' %}" class="rounded-circle me-3" style="width: 60px; height: 60px; object-fit: cover;" alt="Testimonial 2">
+                            <div>
+                                <h6 class="mb-0">Betty M.</h6>
+<small class="text-muted">Support Specialist</small>
+                            </div>
+                        </div>
+                        <p class="mb-0">“The eco-friendly design and smart features make MAS a true innovation. It’s changed our family’s life.”</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial bg-white rounded shadow-sm p-4 h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="{% static 'images/testimonial-3.jpg' %}" class="rounded-circle me-3" style="width: 60px; height: 60px; object-fit: cover;" alt="Testimonial 3">
+                            <div>
+                                <h6 class="mb-0">Dr. Njeri K.</h6>
+                                <small class="text-muted">Rehab Specialist</small>
+                            </div>
+                        </div>
+                        <p class="mb-0">“I recommend MAS to my patients for its comfort, reliability, and positive impact on daily living.”</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-5 text-white" style="background: linear-gradient(90deg, #009688 70%, #43cea2 100%);">
+        <div class="container text-center">
+            <h2 class="display-5 fw-bold mb-3">Ready to Experience MAS?</h2>
+            <p class="lead mb-4">Join our community, support our mission, or get in touch to learn more about how MAS can help you or your loved ones.</p>
+            <a href="{% url 'contact' %}" class="btn btn-lg btn-light text-primary px-5 py-3 fw-bold shadow">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- How MAS Works Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center text-uppercase mb-5">How MAS Works</h2>
+            <div class="row g-5 align-items-center">
+                <div class="col-md-6">
+                    <img src="{% static 'images/mas1.jpeg' %}" class="img-fluid rounded shadow" alt="How MAS Works">
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-unstyled fs-5">
+                        <li class="mb-3"><i class="fa fa-cogs text-primary me-2"></i><b>Modular Design:</b> MAS adapts to different needs and environments with interchangeable components.</li>
+                        <li class="mb-3"><i class="fa fa-battery-full text-success me-2"></i><b>Energy Efficient:</b> Utilizes kinetic energy harvesting and long-lasting batteries for extended use.</li>
+                        <li class="mb-3"><i class="fa fa-leaf text-success me-2"></i><b>Eco Materials:</b> Built from bamboo fiber, bioplastics, and recycled metals for sustainability.</li>
+                        <li class="mb-3"><i class="fa fa-user-friends text-info me-2"></i><b>User-Centric:</b> Designed with direct feedback from users for comfort and accessibility.</li>
+                        <li class="mb-3"><i class="fa fa-mobile-alt text-success me-2"></i><b>Smart Controls:</b> Features intuitive controls and sensors for safety and ease of use.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet the Founder Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center mb-4 mb-md-0">
+                    <img src="{% static 'images/mar.png' %}" class="img-fluid rounded-circle shadow" style="width: 180px; height: 180px; object-fit: cover;" alt="Founder">
+                </div>
+                <div class="col-md-8">
+                    <h2 class="text-uppercase mb-3">Meet the Founder</h2>
+                    <p class="fs-5"><i class="fa fa-quote-left text-primary me-2"></i><em>"Driven by my personal journey and a passion for inclusive design, I created MAS to bridge the gap in assistive technology. Inspired by the challenges faced by my loved ones, I combined engineering expertise, empathy, and a commitment to sustainability to develop a solution that empowers individuals and families across Kenya and beyond."</em></p>
+                    <p class="mb-0"><i class="fa fa-quote-left text-primary me-2"></i><em>“Every person deserves the freedom to move, connect, and thrive. MAS is my way of making that possible.”</em></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center text-uppercase mb-5">Frequently Asked Questions</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item mb-3">
+                    <h2 class="accordion-header" id="faq1">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                            What makes MAS different from other assistive devices?
+                        </button>
+                    </h2>
+                    <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            MAS combines modularity, eco-friendly materials, and smart technology, making it adaptable, sustainable, and user-focused.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-3">
+                    <h2 class="accordion-header" id="faq2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                            Who can use MAS?
+                        </button>
+                    </h2>
+                    <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            MAS is designed for individuals of all ages with mobility challenges, as well as caregivers and healthcare providers seeking reliable, sustainable solutions.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-3">
+                    <h2 class="accordion-header" id="faq3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                            How can I get MAS for myself or someone I know?
+                        </button>
+                    </h2>
+                    <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            You can contact us directly through our website or visit our community partners to learn more about availability and support.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-3">
+                    <h2 class="accordion-header" id="faq4">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                            Is MAS available outside Kenya?
+                        </button>
+                    </h2>
+                    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="faq4" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            We are expanding our reach and welcome inquiries from organizations and individuals outside Kenya. Please contact us for more information.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Features Start -->
+    <div class="container-fluid pt-6 pb-6">
+        <div class="container pt-4">
+            <div class="row g-0 feature-row wow fadeIn" data-wow-delay="0.1s">
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="feature-item border h-100">
+                        <div class="feature-icon btn-xxl-square bg-primary mb-4 mt-n4">
+                            <i class="fa fa-cogs fa-2x text-white"></i>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <h5 class="text-uppercase mb-3">Smart Functionality</h5>
+                            <p>Equipped with sensors and intuitive controls for enhanced user experience and safety.</p>
+                            <a class="position-relative text-body text-uppercase small d-flex justify-content-between" href="/feature/smart-functionality/"><b class="bg-white pe-3">Read More</b> <i class="bi bi-arrow-right bg-white ps-3"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.4s">
+                    <div class="feature-item border h-100">
+                        <div class="feature-icon btn-xxl-square bg-primary mb-4 mt-n4">
+                            <i class="fa fa-leaf fa-2x text-white"></i>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <h5 class="text-uppercase">Eco-Friendly Design</h5>
+                            <p>Constructed from bamboo fibers, corn-based bioplastics, and recycled metals.</p>
+                            <a class="position-relative text-body text-uppercase small d-flex justify-content-between" href="/feature/eco-friendly-design/"><b class="bg-white pe-3">Read More</b> <i class="bi bi-arrow-right bg-white ps-3"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="feature-item border h-100">
+                        <div class="feature-icon btn-xxl-square bg-primary mb-4 mt-n4">
+                            <i class="fa fa-battery-full fa-2x text-white"></i>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <h5 class="text-uppercase">Energy Efficient</h5>
+                            <p>Features kinetic energy harvesting and long-lasting battery systems for extended use.</p>
+                            <a class="position-relative text-body text-uppercase small d-flex justify-content-between" href="/feature/energy-efficient/"><b class="bg-white pe-3">Read More</b> <i class="bi bi-arrow-right bg-white ps-3"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.6s">
+                    <div class="feature-item border h-100">
+                        <div class="feature-icon btn-xxl-square bg-primary mb-4 mt-n4">
+                            <i class="fa fa-users fa-2x text-white"></i>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <h5 class="text-uppercase">User-Centric</h5>
+                            <p>Designed with direct feedback from users with disabilities for inclusivity and comfort.</p>
+                            <a class="position-relative text-body text-uppercase small d-flex justify-content-between" href="/feature/user-centric/"><b class="bg-white pe-3">Read More</b> <i class="bi bi-arrow-right bg-white ps-3"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features End -->
+
+
+
+    
+    <!-- Newsletter Start -->
+    <div class="container-fluid newsletter mt-6 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container pb-5">
+            <div class="bg-white p-5 mb-5">
+                <div class="row g-5">
+                    <div class="col-md-6 wow fadeIn" data-wow-delay="0.3s">
+                        <h1 class="display-6 text-uppercase mb-4">Newsletter</h1>
+                        <div class="d-flex">
+                            <i class="far fa-envelope-open fa-3x text-primary me-4"></i>
+                            <p class="fs-5 fst-italic mb-0">Stay updated with the latest innovations, tips, and news about our Multifunctional Assistive System—designed to empower and support your daily life in Sagana, Kenya and beyond.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 wow fadeIn" data-wow-delay="0.5s">
+                        {% include 'newsletter_form.html' %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter End -->
+
+
+   
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+
+{% endblock %}

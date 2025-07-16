@@ -1,0 +1,9 @@
+{% extends "admin/base.html" %}
+<div style="background: #ff0; color: #000; padding: 10px; text-align: center; font-weight: bold;">TEST: This is the custom admin base_site.html</div>
+{% block content_title %}{% if title %}<h1>{{ title }}</h1>{% endif %}{% endblock %}
+{% if request.user.is_staff %}
+<div style="margin-bottom: 1em;">
+    <a href="/send-newsletter/" class="button btn btn-primary">Send Newsletter to Subscribers</a>
+</div>
+{% endif %}
+{% block content %}{{ block.super }}{% endblock %}

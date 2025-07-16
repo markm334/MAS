@@ -1,0 +1,15 @@
+{% extends "admin/base_site.html" %}
+{% block content %}
+  <h1>Send Newsletter to All Subscribers</h1>
+  <form method="post" enctype="multipart/form-data">{% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="default">Send Newsletter</button>
+  </form>
+  <h3>Recipients:</h3>
+  <ul>
+    {% for subscriber in subscribers %}
+      <li>{{ subscriber.email }}</li>
+    {% endfor %}
+  </ul>
+  <p><a href="/admin/mainapp/newslettersubscription/">Back to Subscribers</a></p>
+{% endblock %}

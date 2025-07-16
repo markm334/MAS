@@ -1,0 +1,128 @@
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('', views.index, name='index'),
+    path('home/', views.index, name='home'),
+
+    path('about/', views.about, name='about'),
+    path('services/', views.service, name='service'),
+    path('feature/', views.feature, name='feature'),
+    path('team/', views.team, name='team'),
+    path('testimonial/', views.testimonial, name='testimonial'),
+    path('appointment/', views.appoinment, name='appointment'),
+    path('contact/', views.contact, name='contact'),
+    path('about.html', views.about_html_redirect, name='about_html_redirect'),
+
+    path('services.html', views.service_html_redirect, name='service_html_redirect'),
+    
+    path('feature.html', views.feature_html_redirect, name='feature_html_redirect'),
+    path('team.html', views.team_html_redirect, name='team_html_redirect'),
+    path('testimonial.html', views.testimonial_html_redirect, name='testimonial_html_redirect'),
+    path('appointment.html', views.appointment_html_redirect, name='appointment_html_redirect'),
+    path('contact.html', views.contact_html_redirect, name='contact_html_redirect'),
+    path('about/index.html', views.about, name='about_index'),
+    path('services/index.html', views.service, name='service_index'),
+    path('feature/index.html', views.feature, name='feature_index'),
+    path('team/index.html', views.team, name='team_index'),
+    path('testimonial/index.html', views.testimonial, name='testimonial_index'),
+    path('appointment/index.html', views.appoinment, name='appointment_index'),
+
+    path('about.html', views.about_html_redirect),
+    path('feature.html', views.feature_html_redirect),
+    path('team.html', views.team_html_redirect),
+    path('testimonial.html', views.testimonial_html_redirect),
+    path('appointment.html', views.appointment_html_redirect),
+    path('contact.html', views.contact_html_redirect),
+    path('about/index.html', views.about, name='about_index'),
+    path('services/index.html', views.service, name='service_index'),
+    path('feature/index.html', views.feature, name='feature_index'),
+    path('team/index.html', views.team, name='team_index'),
+    path('testimonial/index.html', views.testimonial, name='testimonial_index'),
+    path('appointment/index.html', views.appoinment, name='appointment_index'),
+    path('contact/index.html', views.contact, name='contact_index'),
+    path('about/services.html', views.service, name='about_services_html'),
+    path('about/feature.html', views.feature, name='about_feature_html'),
+    path('about/team.html', views.team, name='about_team_html'),
+    path('about/testimonial.html', views.testimonial, name='about_testimonial_html'),
+    
+
+    path('services.html', views.service_html_redirect),
+    path('feature.html', views.feature_html_redirect),
+    path('team.html', views.team_html_redirect),
+    path('testimonial.html', views.testimonial_html_redirect),
+    path('appointment.html', views.appointment_html_redirect),
+    path('contact.html', views.contact_html_redirect),
+    path('about/index.html', views.about, name='about_index'),
+
+    # Staff-only newsletter send page
+    path('send-newsletter/', views.send_newsletter_view, name='send_newsletter_public'),
+
+    # Newsletter subscription
+    path('newsletter/subscribe/', views.newsletter_subscribe, name='newsletter_subscribe'),
+    path('services/index.html', views.service, name='service_index'),
+    path('feature/index.html', views.feature, name='feature_index'),
+    path('team/index.html', views.team, name='team_index'),
+    path('testimonial/index.html', views.testimonial, name='testimonial_index'),
+    path('appointment/index.html', views.appoinment, name='appointment_index'),
+    path('contact/index.html', views.contact, name='contact_index'),
+
+    path('services/about.html', views.about, name='services_about_html'),
+    path('services/feature.html', views.feature, name='services_feature_html'),
+    path('services/team.html', views.team, name='services_team_html'),
+    path('services/testimonial.html', views.testimonial, name='services_testimonial_html'),
+    path('services/appointment.html', views.appoinment, name='services_appointment_html'),
+    path('services/contact.html', views.contact, name='services_contact_html'),
+
+    # Additional cross-page .html navigation for all main sections
+    path('about/services.html', views.service, name='about_services_html'),
+    path('about/feature.html', views.feature, name='about_feature_html'),
+    path('about/team.html', views.team, name='about_team_html'),
+    path('about/testimonial.html', views.testimonial, name='about_testimonial_html'),
+    path('about/appointment.html', views.appoinment, name='about_appointment_html'),
+    path('about/contact.html', views.contact, name='about_contact_html'),
+
+    path('feature/about.html', views.about, name='feature_about_html'),
+    path('feature/services.html', views.service, name='feature_services_html'),
+    path('feature/team.html', views.team, name='feature_team_html'),
+    path('feature/testimonial.html', views.testimonial, name='feature_testimonial_html'),
+    path('feature/appointment.html', views.appoinment, name='feature_appointment_html'),
+    path('feature/contact.html', views.contact, name='feature_contact_html'),
+
+    path('team/about.html', views.about, name='team_about_html'),
+    path('team/services.html', views.service, name='team_services_html'),
+    path('team/feature.html', views.feature, name='team_feature_html'),
+    path('team/testimonial.html', views.testimonial, name='team_testimonial_html'),
+    path('team/appointment.html', views.appoinment, name='team_appointment_html'),
+    path('team/contact.html', views.contact, name='team_contact_html'),
+
+    path('testimonial/about.html', views.about, name='testimonial_about_html'),
+    path('testimonial/services.html', views.service, name='testimonial_services_html'),
+    path('testimonial/feature.html', views.feature, name='testimonial_feature_html'),
+    path('testimonial/team.html', views.team, name='testimonial_team_html'),
+    path('testimonial/appointment.html', views.appoinment, name='testimonial_appointment_html'),
+    path('testimonial/contact.html', views.contact, name='testimonial_contact_html'),
+
+    path('appointment/about.html', views.about, name='appointment_about_html'),
+    path('appointment/services.html', views.service, name='appointment_services_html'),
+    path('appointment/feature.html', views.feature, name='appointment_feature_html'),
+    path('appointment/team.html', views.team, name='appointment_team_html'),
+    path('appointment/testimonial.html', views.testimonial, name='appointment_testimonial_html'),
+    path('appointment/contact.html', views.contact, name='appointment_contact_html'),
+
+    path('contact/about.html', views.about, name='contact_about_html'),
+    path('contact/services.html', views.service, name='contact_services_html'),
+    path('contact/feature.html', views.feature, name='contact_feature_html'),
+    path('contact/team.html', views.team, name='contact_team_html'),
+    path('contact/testimonial.html', views.testimonial, name='contact_testimonial_html'),
+    path('contact/appointment.html', views.appoinment, name='contact_appointment_html'),
+    # Feature detail pages
+    path('feature/smart-functionality/', views.feature_smart_functionality, name='feature_smart_functionality'),
+    path('feature/eco-friendly-design/', views.feature_eco_friendly_design, name='feature_eco_friendly_design'),
+    path('feature/energy-efficient/', views.feature_energy_efficient, name='feature_energy_efficient'),
+    path('feature/user-centric/', views.feature_user_centric, name='feature_user_centric'),
+    path('privacy/', views.privacy, name='privacy'),
+    path('support/', views.support, name='support'),
+    path('inde/', views.inde, name='inde'),
+    path('terms/', views.terms, name='terms'),
+]

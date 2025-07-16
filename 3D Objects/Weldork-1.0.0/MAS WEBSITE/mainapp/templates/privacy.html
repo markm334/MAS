@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 bg-white rounded shadow-sm p-4">
+            <h1 class="mb-4 text-primary">Privacy Policy</h1>
+            <p class="lead">At MAS, we are committed to protecting your privacy and ensuring the security of your personal information. This policy explains how we collect, use, and safeguard your data when you interact with our website and services.</p>
+
+            <h4 class="mt-4">1. Information We Collect</h4>
+            <ul>
+                <li><strong>Personal Information:</strong> Name, email address, phone number, and other details you provide via forms (e.g., newsletter, contact, appointment).</li>
+                <li><strong>Usage Data:</strong> Information about how you use our website, including IP address, browser type, and pages visited.</li>
+            </ul>
+
+            <h4 class="mt-4">2. How We Use Your Information</h4>
+            <ul>
+                <li>To provide and improve our services</li>
+                <li>To communicate with you (e.g., respond to inquiries, send newsletters)</li>
+                <li>To personalize your experience on our website</li>
+                <li>To comply with legal obligations</li>
+            </ul>
+
+            <h4 class="mt-4">3. Data Sharing and Security</h4>
+            <ul>
+                <li>We do <strong>not</strong> sell or rent your personal information to third parties.</li>
+                <li>We may share data with trusted partners who help us operate our website and deliver services, under strict confidentiality agreements.</li>
+                <li>We implement industry-standard security measures to protect your data from unauthorized access or disclosure.</li>
+            </ul>
+
+            <h4 class="mt-4">4. Your Rights</h4>
+            <ul>
+                <li>You may request access to, correction, or deletion of your personal information at any time.</li>
+                <li>You can unsubscribe from our communications using the links provided in our emails or by contacting us directly.</li>
+            </ul>
+
+            <h4 class="mt-4">5. Cookies</h4>
+            <p>We use cookies to enhance your browsing experience. You can control cookie preferences through your browser settings.</p>
+
+            <h4 class="mt-4">6. Changes to This Policy</h4>
+            <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date.</p>
+
+            <h4 class="mt-4">7. Contact Us</h4>
+            <p>If you have any questions or concerns about this Privacy Policy or your data, please contact us at <a href="mailto:markmurangiri885@gmail.com">markmurangiri885@gmail.com</a> or use our <a href="{% url 'contact' %}">Contact page</a>.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

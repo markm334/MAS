@@ -1,0 +1,591 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Multifunctional Assistive System - Services</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="{% static 'images/favicon.png' %}" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid" style="background-color: #1e40af; color: #fff;"  class="text-white d-none d-lg-flex wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-3">
+            <div class="d-flex align-items-center">
+                <a href="index.html">
+                    <h2 class="text-white fw-bold m-0">MAS</h2>
+                </a>
+                <div class="ms-auto d-flex align-items-center">
+                    <small class="ms-4"><i class="fa fa-map-marker-alt me-3"></i> Sagana, Kenya</small>
+                    <small class="ms-4"><i class="fa fa-envelope me-3"></i>markmurangiri885@gmail.com</small>
+                    <small class="ms-4"><i class="fa fa-phone-alt me-3"></i>+254794347868</small>
+                    <div class="ms-3 d-flex">
+                        <a class="btn btn-sm-square btn-light text-primary ms-2" href="https://web.facebook.com/mark.murangiri.75/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-sm-square btn-light text-primary ms-2" href="https://www.linkedin.com/in/mark-murangiri-5391b4228/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-white sticky-top wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light p-lg-0">
+                <a href="index.html" class="navbar-brand d-lg-none">
+                    <h1 class="fw-bold m-0">MAS</h1>
+                </a>
+                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="{% url 'index' %}" class="nav-item nav-link">Home</a>
+                        <a href="{% url 'about' %}" class="nav-item nav-link">About</a>
+                        <a href="{% url 'service' %}" class="nav-item nav-link active">Services</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
+                                <a href="{% url 'feature' %}" class="dropdown-item">Features</a>
+                                <a href="{% url 'team' %}" class="dropdown-item">Our Team</a>
+                                <a href="{% url 'testimonial' %}" class="dropdown-item">Testimonial</a>
+                                <a href="{% url 'appointment' %}" class="dropdown-item">Appoinment</a>
+                            </div>
+                        </div>
+                        <a href="{% url 'contact' %}" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <div class="ms-auto d-none d-lg-block">
+                        <a href="" class="btn btn-primary py-2 px-3">Get A Quote</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header pt-5 mb-6 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center pt-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="bg-white p-5">
+                        <h1 class="display-6 text-uppercase mb-3 animated slideInDown">Assistive System Services</h1>
+                        <nav aria-label="breadcrumb animated slideInDown">
+                            <ol class="breadcrumb justify-content-center mb-0">
+                                <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+                                <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                                <li class="breadcrumb-item" aria-current="page">Assistive Services</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- Service Start -->
+    <div class="container-fluid service pt-6 pb-6">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 700px;">
+                <h1 class="display-6 text-uppercase mb-5">Empowering Lives with Assistive Technology</h1>
+                <p class="mb-4">Our Multifunctional Assistive System offers a range of services to support independence, accessibility, and quality of life for people of all abilities. Explore our core solutions below.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item">
+                        <div class="service-inner pb-5">
+                            <img class="img-fluid w-100" src="{% static 'images/assistive-1.jpeg' %}" alt="Mobility Assistance">
+                            <div class="service-text px-5 pt-4">
+                                <h5 class="text-uppercase">Mobility Assistance</h5>
+                                <p>Wheelchairs, walkers, and smart mobility devices for safe, independent movement indoors and outdoors.</p>
+                            </div>
+                            <a class="btn btn-light px-3" href="{% url 'appointment' %}">Book Consultation<i class="bi bi-chevron-double-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-item">
+                        <div class="service-inner pb-5">
+                            <img class="img-fluid w-100" src="{% static 'images/assistive-2.jpeg' %}" alt="Communication Devices">
+                            <div class="service-text px-5 pt-4">
+                                <h5 class="text-uppercase">Communication Devices</h5>
+                                <p>Speech-generating devices, text-to-speech apps, and accessible communication tools for all users.</p>
+                            </div>
+                            <a class="btn btn-light px-3" href="{% url 'appointment' %}">Book Consultation<i class="bi bi-chevron-double-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item">
+                        <div class="service-inner pb-5">
+                            <img class="img-fluid w-100" src="{% static 'images/service-3.jpg' %}" alt="Daily Living Aids">
+                            <div class="service-text px-5 pt-4">
+                                <h5 class="text-uppercase">Daily Living Aids</h5>
+                                <p>Adaptive utensils, smart home controls, and personal care devices for easier daily routines.</p>
+                            </div>
+                            <a class="btn btn-light px-3" href="{% url 'appointment' %}">Book Consultation<i class="bi bi-chevron-double-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="service-item">
+                        <div class="service-inner pb-5">
+                            <img class="img-fluid w-100" src="{% static 'images/service-4.jpg' %}" alt="Vision & Hearing Support">
+                            <div class="service-text px-5 pt-4">
+                                <h5 class="text-uppercase">Vision & Hearing Support</h5>
+                                <p>Braille readers, screen magnifiers, hearing aids, and alerting systems for sensory accessibility.</p>
+                            </div>
+                            <a class="btn btn-light px-3" href="{% url 'appointment' %}">Book Consultation<i class="bi bi-chevron-double-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+    <!-- Who We Serve Start -->
+    <div class="container-fluid py-6 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                <h1 class="display-6 text-uppercase mb-4">Who We Serve</h1>
+                <p class="mb-0">Our services are designed for a diverse range of individuals and organizations.</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-3">
+                    <div class="bg-white rounded shadow-sm p-4 h-100 text-center">
+                        <i class="fa fa-child fa-3x text-primary mb-3"></i>
+                        <h5 class="mb-2">Children & Students</h5>
+                        <p class="mb-0">Supporting young learners with mobility, communication, and daily living aids for inclusive education.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="bg-white rounded shadow-sm p-4 h-100 text-center">
+                        <i class="fa fa-user fa-3x text-success mb-3"></i>
+                        <h5 class="mb-2">Adults & Seniors</h5>
+                        <p class="mb-0">Empowering independence and quality of life for adults and the elderly with tailored assistive solutions.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="bg-white rounded shadow-sm p-4 h-100 text-center">
+                        <i class="fa fa-hospital fa-3x text-info mb-3"></i>
+                        <h5 class="mb-2">Caregivers & Professionals</h5>
+                        <p class="mb-0">Equipping caregivers, therapists, and healthcare providers with tools for better care and support.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="bg-white rounded shadow-sm p-4 h-100 text-center">
+                        <i class="fa fa-building fa-3x text-success mb-3"></i>
+                        <h5 class="mb-2">Schools & Organizations</h5>
+                        <p class="mb-0">Partnering with institutions to create accessible, inclusive environments for all.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Who We Serve End -->
+
+    <!-- Service Impact Highlights Start -->
+    <div class="container-fluid py-6 bg-light wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                <h1 class="display-6 text-uppercase mb-4">Service Impact Highlights</h1>
+                <p class="mb-0">See the difference our services are making in the community.</p>
+            </div>
+            <div class="row g-4 text-center">
+                <div class="col-md-3">
+                    <div class="bg-white rounded shadow-sm p-4 h-100">
+                        <h2 class="fw-bold mb-1 text-primary">50+</h2>
+                        <p class="mb-0">Clients Empowered</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="bg-white rounded shadow-sm p-4 h-100">
+                        <h2 class="fw-bold mb-1 text-success">90%</h2>
+                        <p class="mb-0">Eco Materials Used</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="bg-white rounded shadow-sm p-4 h-100">
+                        <h2 class="fw-bold mb-1 text-info">12</h2>
+                        <p class="mb-0">Counties Reached</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="bg-white rounded shadow-sm p-4 h-100">
+                        <h2 class="fw-bold mb-1 text-success">30+</h2>
+                        <p class="mb-0">Community Partners</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service Impact Highlights End -->
+
+    <!-- How We Work Start -->
+    <div class="container-fluid py-6 bg-light wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                <h1 class="display-6 text-uppercase mb-4">How We Work</h1>
+                <p class="mb-0">Our process ensures every client receives personalized, effective, and sustainable assistive solutions.</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-3">
+                    <div class="bg-white rounded shadow-sm p-4 h-100 text-center">
+                        <div class="mb-3"><i class="fa fa-comments fa-2x text-primary"></i></div>
+                        <h5 class="mb-2">1. Consultation</h5>
+                        <p class="mb-0">We listen to your needs and assess your environment to recommend the best solutions.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="bg-white rounded shadow-sm p-4 h-100 text-center">
+                        <div class="mb-3"><i class="fa fa-cogs fa-2x text-success"></i></div>
+                        <h5 class="mb-2">2. Customization</h5>
+                        <p class="mb-0">Our team adapts and configures devices to fit your unique requirements and preferences.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="bg-white rounded shadow-sm p-4 h-100 text-center">
+                        <div class="mb-3"><i class="fa fa-hands-helping fa-2x text-info"></i></div>
+                        <h5 class="mb-2">3. Training & Support</h5>
+                        <p class="mb-0">We provide hands-on training and ongoing support to ensure you get the most from your assistive technology.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="bg-white rounded shadow-sm p-4 h-100 text-center">
+                        <div class="mb-3"><i class="fa fa-check-circle fa-2x text-success"></i></div>
+                        <h5 class="mb-2">4. Follow-Up</h5>
+                        <p class="mb-0">We check in regularly to address new needs and keep your solutions up to date.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- How We Work End -->
+
+    <!-- Why Choose Us Start -->
+    <div class="container-fluid py-6 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                <h1 class="display-6 text-uppercase mb-4">Why Choose Our Services?</h1>
+                <p class="mb-0">We are committed to quality, innovation, and client satisfaction in every solution we deliver.</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <div class="bg-white rounded shadow-sm p-4 h-100 text-center">
+                        <i class="fa fa-award fa-3x text-primary mb-3"></i>
+                        <h5 class="mb-2">Award-Winning Solutions</h5>
+                        <p class="mb-0">Recognized for innovation and sustainability in assistive technology.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="bg-white rounded shadow-sm p-4 h-100 text-center">
+                        <i class="fa fa-users fa-3x text-success mb-3"></i>
+                        <h5 class="mb-2">User-Centered Approach</h5>
+                        <p class="mb-0">We design and deliver with direct input from people with disabilities and caregivers.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="bg-white rounded shadow-sm p-4 h-100 text-center">
+                        <i class="fa fa-leaf fa-3x text-info mb-3"></i>
+                        <h5 class="mb-2">Eco-Friendly Commitment</h5>
+                        <p class="mb-0">Our products use sustainable materials and processes to protect the environment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Why Choose Us End -->
+
+    <!-- Service FAQ Start -->
+    <div class="container-fluid py-6 bg-light wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                <h1 class="display-6 text-uppercase mb-4">Service FAQ</h1>
+                <p class="mb-0">Find answers to common questions about our assistive services.</p>
+            </div>
+            <div class="accordion" id="serviceFaqAccordion">
+                <div class="accordion-item mb-3">
+                    <h2 class="accordion-header" id="faq1">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                            Who can benefit from your services?
+                        </button>
+                    </h2>
+                    <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="faq1" data-bs-parent="#serviceFaqAccordion">
+                        <div class="accordion-body">
+                            Our services are designed for individuals of all ages with mobility, communication, daily living, or sensory challenges, as well as caregivers and organizations.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-3">
+                    <h2 class="accordion-header" id="faq2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                            How do I book a consultation?
+                        </button>
+                    </h2>
+                    <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#serviceFaqAccordion">
+                        <div class="accordion-body">
+                            Simply use our online form above or contact us directly to schedule a free, no-obligation consultation.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-3">
+                    <h2 class="accordion-header" id="faq3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                            Do you offer after-sales support?
+                        </button>
+                    </h2>
+                    <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#serviceFaqAccordion">
+                        <div class="accordion-body">
+                            Yes, we provide ongoing support, training, and maintenance to ensure you get the most from your assistive technology.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-3">
+                    <h2 class="accordion-header" id="faq4">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                            Can you create custom solutions?
+                        </button>
+                    </h2>
+                    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="faq4" data-bs-parent="#serviceFaqAccordion">
+                        <div class="accordion-body">
+                            Absolutely! We specialize in tailoring assistive devices and systems to meet unique needs and preferences.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service FAQ End -->
+
+
+    <!-- Assistive Consultation Start -->
+    <div class="container-fluid appoinment mt-6 mb-6 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container pt-5">
+            <div class="row gy-5 gx-0">
+                <div class="col-lg-6 pe-lg-5 wow fadeIn" data-wow-delay="0.3s">
+                    <h1 class="display-6 text-uppercase text-white mb-4">Book Your Assistive Consultation</h1>
+                    <p class="text-white mb-5 wow fadeIn" data-wow-delay="0.4s">Our experts are ready to help you find the right assistive technology for your needs. Schedule a free consultation to discuss mobility, communication, daily living, or sensory support solutions.</p>
+                    <div class="d-flex align-items-start wow fadeIn" data-wow-delay="0.5s">
+                        <div class="btn-lg-square bg-white">
+                            <i class="bi bi-geo-alt text-dark fs-3"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h6 class="text-white text-uppercase">Support Center</h6>
+                            <span class="text-white">Sagana, Kenya</span>
+                        </div>
+                    </div>
+                    <hr class="bg-body">
+                    <div class="d-flex align-items-start wow fadeIn" data-wow-delay="0.6s">
+                        <div class="btn-lg-square bg-white">
+                            <i class="bi bi-clock text-dark fs-3"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h6 class="text-white text-uppercase">Consultation Hours</h6>
+                            <span class="text-white">Mon-Fri 09am-5pm, Sat 10am-2pm</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-n5 wow fadeIn" data-wow-delay="0.7s">
+                    <div class="bg-white p-5">
+                        <h2 class="text-uppercase mb-4">Request a Consultation</h2>
+                        <form method="post" action="{% url 'appointment' %}" autocomplete="off">
+                            {% csrf_token %}
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control border-0 bg-light" id="name" name="name" placeholder="Your Name" aria-label="Your Name" required>
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control border-0 bg-light" id="email" name="email" placeholder="Your Email" aria-label="Your Email" required>
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control border-0 bg-light" id="mobile" name="mobile" placeholder="Your Mobile" aria-label="Your Mobile">
+                                        <label for="mobile">Your Mobile</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <select class="form-select border-0 bg-light" id="assistive_service" name="assistive_service" aria-label="Select Assistive Service" required>
+                                            <option selected>Mobility Assistance</option>
+                                            <option>Communication Devices</option>
+                                            <option>Daily Living Aids</option>
+                                            <option>Vision & Hearing Support</option>
+                                            <option>Custom Solution</option>
+                                        </select>
+                                        <label for="assistive_service">Select Service</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control border-0 bg-light" placeholder="Describe your needs or questions" id="message" name="message" style="height: 130px" aria-label="Describe your needs or questions" required></textarea>
+                                        <label for="message">Describe your needs or questions</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Book Consultation</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Assistive Consultation End -->
+
+
+   
+
+
+   
+
+
+  <div class="container-fluid bg-dark footer py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase text-light mb-4">Our Office</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>Sagana, Kenya</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>+254794347868</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>markmurangiri885@gmail.com</p>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square btn-light me-2" href="https://web.facebook.com/mark.murangiri.75/" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-light me-2" href="https://www.linkedin.com/in/mark-murangiri-5391b4228/" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-square btn-light me-2" href="https://www.youtube.com/@FUTURE-UTTERMOSt" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="{% url 'about' %}">About Us</a>
+                    <a class="btn btn-link" href="{% url 'contact' %}">Contact Us</a>
+                    <a class="btn btn-link" href="{% url 'service' %}">Our Services</a>
+                    <a class="btn btn-link" href="{% url 'terms' %}">Terms & Condition</a>
+                    <a class="btn btn-link" href="{% url 'support' %}">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase text-light mb-4">Business Hours</h5>
+                    <p class="text-uppercase mb-0">Monday - Friday</p>
+                    <p>09:00 am - 07:00 pm</p>
+                    <p class="text-uppercase mb-0">Saturday</p>
+                    <p>09:00 am - 12:00 pm</p>
+                    <p class="text-uppercase mb-0">Sunday</p>
+                    <p>Closed</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase text-light mb-4">Gallery</h5>
+                    <div class="row g-1">
+                        <div class="col-4">
+                            <img class="img-fluid" src="{% static 'img/service-1.jpg' %}" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid" src="{% static 'img/service-2.jpg' %}" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid" src="{% static 'img/service-3.jpg' %}" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid" src="{% static 'img/service-4.jpg' %}" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid" src="{% static 'img/service-5.jpg' %}" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid" src="{% static 'img/service-6.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid text-body copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="fw-semi-bold" href="#">MAS</a>, All Right Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                    <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                    <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                Designed by <span class="fw-semi-bold">Founder of MAS</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'lib/wow/wow.min.js' %}"></script>
+    <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+    <script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+    <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
