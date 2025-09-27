@@ -102,42 +102,168 @@
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1">
-                <img class="img-fluid" src="{% static 'images/mas1.jpeg' %}" alt="MAS Image 1">
+                <img class="img-fluid" src="{% static 'images/D.jpg' %}" alt="MAS Gallery 1">
             </button>
             <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="1" aria-label="Slide 2">
-                <img class="img-fluid" src="{% static 'images/mas2.png' %}" alt="MAS Image 2">
+                <img class="img-fluid" src="{% static 'images/mas -wheelchair.jpg' %}" alt="MAS Gallery 2">
             </button>
             <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="2" aria-label="Slide 3">
-                <img class="img-fluid" src="{% static 'images/assistive-3.jpeg' %}" alt="MAS Image 3">
+                <img class="img-fluid" src="{% static 'images/Q.jpg' %}" alt="MAS Gallery 3">
+            </button>
+            <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="3" aria-label="Slide 4">
+                <img class="img-fluid" src="{% static 'images/S.jpg' %}" alt="MAS Gallery 4">
+            </button>
+            <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="4" aria-label="Slide 5">
+                <img class="img-fluid" src="{% static 'images/WhatsApp Image 2025-09-27 at 19.36.25_fc228577.jpg' %}" alt="MAS Gallery 5">
             </button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="w-100" src="{% static 'images/mas1.jpeg' %}" alt="MAS Image 1" style="height: 600px; object-fit: cover;">
+                <img class="w-100" src="{% static 'images/D.jpg' %}" alt="MAS Gallery 1" style="height: 600px; object-fit: cover;">
                 <div class="carousel-caption">
                     <h1 class="display-1 text-uppercase text-white mb-4 animated zoomIn">Innovative Assistive Technology</h1>
-                    <a href="#" class="btn btn-primary py-3 px-4">Learn More</a>
+
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="w-100" src="{% static 'images/mas2.png' %}" alt="MAS Image 2" style="height: 600px; object-fit: cover;">
+                <img class="w-100" src="{% static 'images/mas -wheelchair.jpg' %}" alt="MAS Gallery 2" style="height: 600px; object-fit: cover;">
                 <div class="carousel-caption">
                     <h1 class="display-1 text-uppercase text-white mb-4 animated zoomIn">Empowering Mobility & Independence</h1>
-                    <a href="#" class="btn btn-primary py-3 px-4">Learn More</a>
+                    <button type="button" class="btn btn-primary py-3 px-4" data-bs-toggle="modal" data-bs-target="#smartModal">Learn More</button>
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="w-100" src="{% static 'images/assistive-3.jpeg' %}" alt="MAS Image 3" style="height: 600px; object-fit: cover;">
+                <img class="w-100" src="{% static 'images/Q.jpg' %}" alt="MAS Gallery 3" style="height: 600px; object-fit: cover;">
                 <div class="carousel-caption">
                     <h1 class="display-1 text-uppercase text-white mb-4 animated zoomIn">Sustainable & User-Centered Design</h1>
-                    <a href="#" class="btn btn-primary py-3 px-4">Learn More</a>
+                    <button type="button" class="btn btn-primary py-3 px-4" data-bs-toggle="modal" data-bs-target="#userModal">Learn More</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="w-100" src="{% static 'images/S.jpg' %}" alt="MAS Gallery 4" style="height: 600px; object-fit: cover;">
+                <div class="carousel-caption">
+                    <h1 class="display-1 text-uppercase text-white mb-4 animated zoomIn">Assistive System in Action</h1>
+                    <button type="button" class="btn btn-primary py-3 px-4" data-bs-toggle="modal" data-bs-target="#energyModal">Learn More</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="w-100" src="{% static 'images/WhatsApp Image 2025-09-27 at 19.36.25_fc228577.jpg' %}" alt="MAS Gallery 5" style="height: 600px; object-fit: cover;">
+                <div class="carousel-caption">
+                    <h1 class="display-1 text-uppercase text-white mb-4 animated zoomIn">MAS Project Workshop</h1>
+                    <button type="button" class="btn btn-primary py-3 px-4" data-bs-toggle="modal" data-bs-target="#featureModal">Learn More</button>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-    <!-- Carousel End -->
+        <!-- Carousel End -->
+
+        <!-- Feature Modals -->
+        <div class="modal fade" id="ecoModal" tabindex="-1" aria-labelledby="ecoModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="ecoModalLabel">Eco-Friendly Design</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="lead">MAS is constructed from sustainable materials such as bamboo fibers, corn-based bioplastics, and recycled metals. This eco-friendly approach reduces environmental impact while maintaining strength and durability.</p>
+                        <ul>
+                            <li>Bamboo fiber structure</li>
+                            <li>Corn-starch bioplastics</li>
+                            <li>Recycled aluminum and metals</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="smartModal" tabindex="-1" aria-labelledby="smartModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="smartModalLabel">Smart Functionality</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="lead">The Multifunctional Assistive System (MAS) is equipped with advanced sensors and intuitive controls, ensuring enhanced user experience and safety. Smart features allow seamless interaction and real-time monitoring for users and caregivers.</p>
+                        <ul>
+                            <li>Integrated safety sensors</li>
+                            <li>Easy-to-use interface</li>
+                            <li>Real-time feedback and alerts</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="userModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="userModalLabel">User-Centric</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="lead">MAS is designed with direct feedback from users with disabilities, ensuring inclusivity, comfort, and empowerment. Every aspect of MAS is tailored to promote independence and ease of use.</p>
+                        <ul>
+                            <li>Inclusive design process</li>
+                            <li>Comfort-focused ergonomics</li>
+                            <li>Empowering user features</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="energyModal" tabindex="-1" aria-labelledby="energyModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="energyModalLabel">Energy Efficient</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="lead">MAS features kinetic energy harvesting and long-lasting battery systems, allowing for extended use and reduced need for frequent charging. Harnessing user motion and solar input, MAS is both practical and sustainable.</p>
+                        <ul>
+                            <li>Kinetic energy harvesting</li>
+                            <li>Solar charging capability</li>
+                            <li>Long-lasting battery</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="featureModal" tabindex="-1" aria-labelledby="featureModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="featureModalLabel">MAS Project Workshop</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="lead">Explore all features of the Multifunctional Assistive System (MAS) including eco-friendly design, smart functionality, user-centric approach, and energy efficiency. MAS is a comprehensive solution for mobility and independence.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
     <!-- About Start -->
@@ -187,6 +313,64 @@
     </div>
     <!-- About End -->
 
+        <!-- MAS Video Start -->
+            <!-- MAS Model Illustration Video Start -->
+            <div class="container d-flex justify-content-center my-5">
+                <div class="row w-100" style="max-width: 1100px;">
+                    <div class="col-md-6 d-flex align-items-center">
+                        <div class="card border-0 shadow-sm rounded-4 w-100">
+                            <div class="ratio ratio-16x9 rounded-top">
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/CysQmt199xE?si=HgqkBufK-TDNOrYw"
+                                    title="MAS Model Illustration" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-success mb-2">MAS: The First Model</h5>
+                                <p class="card-text small">A visual illustration of the original MAS concept, showing the dream and inspiration that started it all.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex flex-column justify-content-center">
+                        <h2 class="mb-3">Where the Dream Was First Modeled</h2>
+                        <p class="lead">This video captures the earliest vision for MAS, illustrating the journey from concept to reality. It highlights the creative process, the challenges faced, and the inspiration that drove the project forward.</p>
+                        <div class="mb-4">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fa fa-lightbulb text-success me-2"></i> <b>Early Concept:</b> The initial idea and sketches for MAS.</li>
+                                <li class="mb-2"><i class="fa fa-cube text-success me-2"></i> <b>Model Illustration:</b> A visual guide to what MAS could become.</li>
+                                <li class="mb-2"><i class="fa fa-rocket text-success me-2"></i> <b>Inspiration:</b> The motivation and hope behind building the system.</li>
+                            </ul>
+                        </div>
+                        <blockquote class="blockquote text-muted ps-3 border-start border-3 border-success">
+                            <p class="mb-0">“Every innovation begins with a dream. MAS started as a vision to empower and include, and this model was the first step.”</p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <!-- MAS Model Illustration Video End -->
+            <div class="container my-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <div class="ratio ratio-16x9 rounded shadow">
+                            <iframe src="https://www.youtube.com/embed/EoV7MbMYqKQ?si=Nysjfk4ifeu84aCK"
+                                title="MAS YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="mb-3">See the Multifunctional Assistive System in Action</h2>
+                        <p class="lead">Experience how MAS empowers users with smart functionality, eco-friendly design, and energy efficiency. This video demonstrates real-world use, innovative features, and the impact MAS is making for individuals and families.</p>
+                        <ul class="list-unstyled mb-4">
+                            <li><i class="fa fa-check text-success me-2"></i> Real user demonstration</li>
+                            <li><i class="fa fa-check text-success me-2"></i> Key features highlighted</li>
+                            <li><i class="fa fa-check text-success me-2"></i> Designed for inclusivity and independence</li>
+                        </ul>
+                        <p class="text-muted">Want to learn more? <a href="/about/" class="text-success">Read about MAS</a> or <a href="/contact/" class="text-success">get in touch</a> for a demo.</p>
+                    </div>
+                </div>
+            </div>
+        <!-- MAS Video End -->
+
 
     <!-- Features Start -->
    <div class="container-fluid pt-6 pb-6">
@@ -202,8 +386,6 @@
                         <h5 class="text-uppercase mb-3">Smart Functionality</h5>
                         <p>Equipped with sensors and intuitive controls for enhanced user experience and safety.</p>
                         <a class="position-relative text-body text-uppercase small d-flex justify-content-between" href="#">
-                            <b class="bg-white pe-3">Read More</b>
-                            <i class="bi bi-arrow-right bg-white ps-3"></i>
                         </a>
                     </div>
                 </div>
@@ -218,8 +400,6 @@
                         <h5 class="text-uppercase">Eco-Friendly Design</h5>
                         <p>Constructed from bamboo fibers, corn-based bioplastics, and recycled metals.</p>
                         <a class="position-relative text-body text-uppercase small d-flex justify-content-between" href="#">
-                            <b class="bg-white pe-3">Read More</b>
-                            <i class="bi bi-arrow-right bg-white ps-3"></i>
                         </a>
                     </div>
                 </div>
@@ -234,8 +414,6 @@
                         <h5 class="text-uppercase">Energy Efficient</h5>
                         <p>Features kinetic energy harvesting and long-lasting battery systems for extended use.</p>
                         <a class="position-relative text-body text-uppercase small d-flex justify-content-between" href="#">
-                            <b class="bg-white pe-3">Read More</b>
-                            <i class="bi bi-arrow-right bg-white ps-3"></i>
                         </a>
                     </div>
                 </div>
@@ -250,8 +428,6 @@
                         <h5 class="text-uppercase">User-Centric</h5>
                         <p>Designed with direct feedback from users with disabilities for inclusivity and comfort.</p>
                         <a class="position-relative text-body text-uppercase small d-flex justify-content-between" href="#">
-                            <b class="bg-white pe-3">Read More</b>
-                            <i class="bi bi-arrow-right bg-white ps-3"></i>
                         </a>
                     </div>
                 </div>
@@ -283,8 +459,8 @@
                         </div>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
                             <div class="flex-column text-center border border-5 border-primary p-5">
-                                <h1 class="text-white" data-toggle="counter-up">4</h1>
-                                <p class="text-white text-uppercase mb-0">Units Deployed</p>
+                                <h1 class="text-white" data-toggle="counter-up">2</h1>
+                                    <p class="text-white text-uppercase mb-0">Units Deployed</p>
                             </div>
                         </div>
                     </div>
@@ -335,7 +511,7 @@
                             <h5 class="text-uppercase">Smart Navigation</h5>
                             <p>Integrated sensors and obstacle detection for safer movement in all environments.</p>
                         </div>
-                        <a class="btn btn-light px-3" href="">Read More<i class="bi bi-chevron-double-right ms-1"></i></a>
+                            <button type="button" class="btn btn-light px-3" data-bs-toggle="modal" data-bs-target="#smartNavModal">Read More<i class="bi bi-chevron-double-right ms-1"></i></button>
                     </div>
                 </div>
             </div>
@@ -348,7 +524,7 @@
                             <h5 class="text-uppercase">Energy Harvesting</h5>
                             <p>Powered by kinetic and solar energy systems to reduce external charging needs.</p>
                         </div>
-                        <a class="btn btn-light px-3" href="">Read More<i class="bi bi-chevron-double-right ms-1"></i></a>
+                            <button type="button" class="btn btn-light px-3" data-bs-toggle="modal" data-bs-target="#energyHarvestModal">Read More<i class="bi bi-chevron-double-right ms-1"></i></button>
                     </div>
                 </div>
             </div>
@@ -361,7 +537,7 @@
                             <h5 class="text-uppercase">Eco-Friendly Materials</h5>
                             <p>Built using sustainable materials like bamboo fibers and bioplastics.</p>
                         </div>
-                        <a class="btn btn-light px-3" href="">Read More<i class="bi bi-chevron-double-right ms-1"></i></a>
+                            <button type="button" class="btn btn-light px-3" data-bs-toggle="modal" data-bs-target="#ecoMaterialsModal">Read More<i class="bi bi-chevron-double-right ms-1"></i></button>
                     </div>
                 </div>
             </div>
@@ -374,7 +550,7 @@
                             <h5 class="text-uppercase">Modular Design</h5>
                             <p>Disassemblable components for easy transport, repair, and recycling.</p>
                         </div>
-                        <a class="btn btn-light px-3" href="">Read More<i class="bi bi-chevron-double-right ms-1"></i></a>
+                            <button type="button" class="btn btn-light px-3" data-bs-toggle="modal" data-bs-target="#modularDesignModal">Read More<i class="bi bi-chevron-double-right ms-1"></i></button>
                     </div>
                 </div>
             </div>
@@ -387,7 +563,7 @@
                             <h5 class="text-uppercase">User-Centric Interface</h5>
                             <p>Touchscreen or app-based interface tailored to various accessibility needs.</p>
                         </div>
-                        <a class="btn btn-light px-3" href="">Read More<i class="bi bi-chevron-double-right ms-1"></i></a>
+                            <button type="button" class="btn btn-light px-3" data-bs-toggle="modal" data-bs-target="#userInterfaceModal">Read More<i class="bi bi-chevron-double-right ms-1"></i></button>
                     </div>
                 </div>
             </div>
@@ -400,7 +576,7 @@
                             <h5 class="text-uppercase">Rural & Urban Use</h5>
                             <p>Engineered for adaptability in diverse terrains and community settings.</p>
                         </div>
-                        <a class="btn btn-light px-3" href="">Read More<i class="bi bi-chevron-double-right ms-1"></i></a>
+                            <button type="button" class="btn btn-light px-3" data-bs-toggle="modal" data-bs-target="#ruralUrbanModal">Read More<i class="bi bi-chevron-double-right ms-1"></i></button>
                     </div>
                 </div>
             </div>
@@ -413,7 +589,7 @@
                             <h5 class="text-uppercase">Custom Fit Solutions</h5>
                             <p>Adjustable components designed to fit individual body needs and preferences.</p>
                         </div>
-                        <a class="btn btn-light px-3" href="">Read More<i class="bi bi-chevron-double-right ms-1"></i></a>
+                            <button type="button" class="btn btn-light px-3" data-bs-toggle="modal" data-bs-target="#customFitModal">Read More<i class="bi bi-chevron-double-right ms-1"></i></button>
                     </div>
                 </div>
             </div>
@@ -426,7 +602,7 @@
                             <h5 class="text-uppercase">IoT & Connectivity</h5>
                             <p>Remote diagnostics, tracking, and system updates through connected tech.</p>
                         </div>
-                        <a class="btn btn-light px-3" href="">Read More<i class="bi bi-chevron-double-right ms-1"></i></a>
+                            <button type="button" class="btn btn-light px-3" data-bs-toggle="modal" data-bs-target="#iotModal">Read More<i class="bi bi-chevron-double-right ms-1"></i></button>
                     </div>
                 </div>
             </div>
@@ -436,6 +612,190 @@
 </div>
 
     <!-- Service End -->
+    <!-- Service Feature Modals -->
+    <div class="modal fade" id="smartNavModal" tabindex="-1" aria-labelledby="smartNavModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="smartNavModalLabel">Smart Navigation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">Smart Navigation is at the heart of MAS, providing users with advanced integrated sensors that detect obstacles and hazards in real time. This technology ensures safer movement both indoors and outdoors, giving users confidence and independence. The system adapts to different environments, automatically adjusting sensitivity and alerting users to potential dangers, making navigation effortless and secure.</p>
+                    <ul>
+                        <li>Real-time obstacle detection</li>
+                        <li>Adaptive sensor technology for various terrains</li>
+                        <li>Audible and visual alerts for enhanced safety</li>
+                        <li>Supports independent mobility for all users</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="energyHarvestModal" tabindex="-1" aria-labelledby="energyHarvestModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="energyHarvestModalLabel">Energy Harvesting</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">MAS utilizes innovative energy harvesting systems, including kinetic and solar technologies, to power the device. This reduces the need for frequent external charging and ensures continuous operation. The kinetic system captures energy from user movement, while integrated solar panels provide supplemental power, making MAS highly efficient and environmentally friendly.</p>
+                    <ul>
+                        <li>Kinetic energy harvesting from user motion</li>
+                        <li>Solar panels for sustainable power</li>
+                        <li>Extended battery life for longer use</li>
+                        <li>Minimizes reliance on external charging</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="ecoMaterialsModal" tabindex="-1" aria-labelledby="ecoMaterialsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ecoMaterialsModalLabel">Eco-Friendly Materials</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">MAS is constructed using eco-friendly materials such as bamboo fibers, corn-starch bioplastics, and recycled metals. This sustainable approach not only reduces environmental impact but also ensures durability and strength. The use of renewable resources reflects MAS’s commitment to environmental responsibility and long-term sustainability.</p>
+                    <ul>
+                        <li>Bamboo fiber structure for lightweight strength</li>
+                        <li>Corn-starch bioplastics for reduced carbon footprint</li>
+                        <li>Recycled aluminum and metals for durability</li>
+                        <li>Environmentally conscious design</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modularDesignModal" tabindex="-1" aria-labelledby="modularDesignModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modularDesignModalLabel">Modular Design</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">The modular design of MAS allows for easy disassembly and reconfiguration, making transport, repair, and recycling simple and efficient. Users can customize the system to their needs, replace parts as required, and benefit from a product that is both flexible and sustainable.</p>
+                    <ul>
+                        <li>Easy-to-disassemble components</li>
+                        <li>Customizable modules for user preferences</li>
+                        <li>Facilitates repair and maintenance</li>
+                        <li>Supports recycling and sustainability</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="userInterfaceModal" tabindex="-1" aria-labelledby="userInterfaceModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="userInterfaceModalLabel">User-Centric Interface</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">MAS features a user-centric interface, available as a touchscreen or app-based control, designed to meet diverse accessibility needs. The intuitive interface allows users to easily operate the system, adjust settings, and access support, ensuring a seamless and empowering experience for everyone.</p>
+                    <ul>
+                        <li>Touchscreen and app-based controls</li>
+                        <li>Customizable accessibility options</li>
+                        <li>Simple, intuitive user experience</li>
+                        <li>Remote support and diagnostics</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="ruralUrbanModal" tabindex="-1" aria-labelledby="ruralUrbanModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ruralUrbanModalLabel">Rural & Urban Use</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">MAS is engineered for use in both rural and urban environments, adapting to a wide range of terrains and community settings. Its robust design and smart navigation features ensure reliable performance whether on city streets or rural paths, making it a truly inclusive solution for all users.</p>
+                    <ul>
+                        <li>Adaptable to various terrains</li>
+                        <li>Reliable in both urban and rural settings</li>
+                        <li>Supports community integration</li>
+                        <li>Designed for inclusivity and accessibility</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="customFitModal" tabindex="-1" aria-labelledby="customFitModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="customFitModalLabel">Custom Fit Solutions</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">Custom Fit Solutions in MAS allow users to adjust components for a perfect fit, accommodating individual body needs and preferences. This ensures maximum comfort, safety, and usability, empowering users to enjoy a truly personalized assistive experience.</p>
+                    <ul>
+                        <li>Adjustable components for personalized fit</li>
+                        <li>Ergonomic design for comfort and safety</li>
+                        <li>Supports a wide range of user needs</li>
+                        <li>Promotes independence and confidence</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="iotModal" tabindex="-1" aria-labelledby="iotModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="iotModalLabel">IoT & Connectivity</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">MAS leverages IoT and connectivity features to provide remote diagnostics, real-time tracking, and system updates. This connected technology enables users and caregivers to monitor device status, receive alerts, and access support from anywhere, ensuring peace of mind and optimal performance.</p>
+                    <ul>
+                        <li>Remote diagnostics and monitoring</li>
+                        <li>Real-time location tracking</li>
+                        <li>Automatic system updates</li>
+                        <li>Enhanced support and security</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -640,22 +1000,22 @@
                 <h5 class="text-uppercase text-light mb-4">Gallery</h5>
                 <div class="row g-1">
                     <div class="col-4">
-                        <img class="img-fluid" src="{% static 'images/assistive-1.jpg' %}" alt="MAS Device 1">
+                        <img class="img-fluid" src="{% static 'images/D.jpg' %}" alt="MAS Device 1">
                     </div>
                     <div class="col-4">
-                        <img class="img-fluid" src="{% static 'images/assistive-2.jpg' %}" alt="MAS Device 2">
+                        <img class="img-fluid" src="{% static 'images/mas -wheelchair.jpg' %}" alt="MAS Device 2">
                     </div>
                     <div class="col-4">
-                        <img class="img-fluid" src="{% static 'images/assistive-3.jpg' %}" alt="MAS Device 3">
+                        <img class="img-fluid" src="{% static 'images/Q.jpg' %}" alt="MAS Device 3">
                     </div>
                     <div class="col-4">
-                        <img class="img-fluid" src="{% static 'images/assistive-4.jpg' %}" alt="Training Session">
+                        <img class="img-fluid" src="{% static 'images/S.jpg' %}" alt="Training Session">
                     </div>
                     <div class="col-4">
-                        <img class="img-fluid" src="{% static 'images/assistive-5.jpg' %}" alt="Prototype Display">
+                        <img class="img-fluid" src="{% static 'images/WhatsApp Image 2025-09-27 at 19.36.25_fc228577.jpg' %}" alt="Prototype Display">
                     </div>
                     <div class="col-4">
-                        <img class="img-fluid" src="{% static 'images/assistive-6.jpg' %}" alt="Community Use">
+                        <img class="img-fluid" src="{% static 'images/AS1.jpg' %}" alt="Community Use">
                     </div>
                 </div>
             </div>
