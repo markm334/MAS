@@ -31,3 +31,11 @@ def donation(request):
 
 def volunteer(request):
 	return render(request, 'volunteer.html')
+
+
+def service(request):
+    return render(request, 'service.html')
+
+
+def causes(request):
+    return render(request, 'causes.html')

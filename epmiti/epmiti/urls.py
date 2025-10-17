@@ -28,4 +28,6 @@ urlpatterns = [
     path('events/', core_views.events, name='events'),
     path('donation/', core_views.donation, name='donation'),
     path('volunteer/', core_views.volunteer, name='volunteer'),
+    path('service/', core_views.service, name='service'),
+    path('causes/', core_views.causes, name='causes'),
 ]
